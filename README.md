@@ -35,6 +35,22 @@ it, simply add the following line to your Podfile:
 pod 'ZLPagerTabController'
 ```
 
+
+
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4799.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4798.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4797.GIF" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4796.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4795.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4794.GIF" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4793.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4792.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4800.PNG" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4801.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4802.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4803.PNG" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4804.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4805.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4806.PNG" width="30%" height="30%">
+
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4807.PNG" width="30%" height="30%">   
+
 ## 新建控制器继承ZLPagerTabBarViewController，实现数据源方法
 ```ruby
 //返回子控制器
@@ -52,21 +68,6 @@ pod 'ZLPagerTabController'
     return item;
 }
 ```
-
-
-<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4799.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4798.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4797.GIF" width="30%" height="30%">
-
-<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4796.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4795.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4794.GIF" width="30%" height="30%">
-
-<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4793.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4792.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4800.PNG" width="30%" height="30%">
-
-<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4801.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4802.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4803.PNG" width="30%" height="30%">
-
-<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4804.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4805.PNG" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4806.PNG" width="30%" height="30%">
-
-
-<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4807.PNG" width="30%" height="30%">   
-
 
 ## Author
 
