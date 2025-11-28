@@ -1,9 +1,5 @@
 # ZLPagerTabController
 
-[![CI Status](https://img.shields.io/travis/fanpeng/ZLPagerTabController.svg?style=flat)](https://travis-ci.org/fanpeng/ZLPagerTabController)
-[![Version](https://img.shields.io/cocoapods/v/ZLPagerTabController.svg?style=flat)](https://cocoapods.org/pods/ZLPagerTabController)
-[![License](https://img.shields.io/cocoapods/l/ZLPagerTabController.svg?style=flat)](https://cocoapods.org/pods/ZLPagerTabController)
-[![Platform](https://img.shields.io/cocoapods/p/ZLPagerTabController.svg?style=flat)](https://cocoapods.org/pods/ZLPagerTabController)
 
 ## Example
 
@@ -19,6 +15,16 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ZLPagerTabController'
 ```
+
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4799.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4798.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4797.GIF" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4796.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4795.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4794.GIF" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4793.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4792.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4791.GIF" width="30%" height="30%">
+
+
+
 
 ## Author
 
