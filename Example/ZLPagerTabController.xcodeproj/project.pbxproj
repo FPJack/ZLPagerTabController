@@ -21,8 +21,34 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		8486FF662ED98876002D624E /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486FF582ED98876002D624E /* TestCell.xib */; };
+		8486FF672ED98876002D624E /* ZLImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF472ED98876002D624E /* ZLImageTextViewController.m */; };
+		8486FF682ED98876002D624E /* ZLSegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF5E2ED98876002D624E /* ZLSegmentedControlViewController.m */; };
+		8486FF692ED98876002D624E /* ZLChildTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF292ED98876002D624E /* ZLChildTextVC.m */; };
+		8486FF6A2ED98876002D624E /* ZLSeparatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF5B2ED98876002D624E /* ZLSeparatorViewController.m */; };
+		8486FF6B2ED98876002D624E /* ZLEllipseMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF442ED98876002D624E /* ZLEllipseMaskViewController.m */; };
+		8486FF6C2ED98876002D624E /* ZLCustomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF2D2ED98876002D624E /* ZLCustomVC.m */; };
+		8486FF6D2ED98876002D624E /* ZLNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF3E2ED98876002D624E /* ZLNormalViewController.m */; };
+		8486FF6E2ED98876002D624E /* ZLNestPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF4D2ED98876002D624E /* ZLNestPagerViewController.m */; };
+		8486FF6F2ED98876002D624E /* ZLSepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF4A2ED98876002D624E /* ZLSepViewController.m */; };
+		8486FF702ED98876002D624E /* ZLBasePagerTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF642ED98876002D624E /* ZLBasePagerTabbarViewController.m */; };
+		8486FF712ED98876002D624E /* ZLParallaxPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF4F2ED98876002D624E /* ZLParallaxPagerViewController.m */; };
+		8486FF722ED98876002D624E /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF572ED98876002D624E /* TestCell.m */; };
+		8486FF732ED98876002D624E /* ZLBaseChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF252ED98876002D624E /* ZLBaseChildViewController.m */; };
+		8486FF742ED98876002D624E /* ZLCustomScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF352ED98876002D624E /* ZLCustomScrollViewViewController.m */; };
+		8486FF752ED98876002D624E /* ZLChildImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF272ED98876002D624E /* ZLChildImageVC.m */; };
+		8486FF762ED98876002D624E /* ZLCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF552ED98876002D624E /* ZLCustomViewController.m */; };
+		8486FF772ED98876002D624E /* ZLNestPagerTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF322ED98876002D624E /* ZLNestPagerTabBarViewController.m */; };
+		8486FF782ED98876002D624E /* ZLNormalChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF2F2ED98876002D624E /* ZLNormalChildVC.m */; };
+		8486FF792ED98876002D624E /* ZLAttributedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF412ED98876002D624E /* ZLAttributedViewController.m */; };
+		8486FF7A2ED98876002D624E /* ZLAttributedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF232ED98876002D624E /* ZLAttributedVC.m */; };
+		8486FF7B2ED98876002D624E /* ZLTabBarAddViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF612ED98876002D624E /* ZLTabBarAddViewViewController.m */; };
+		8486FF7C2ED98876002D624E /* ZLChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF2B2ED98876002D624E /* ZLChildViewController.m */; };
+		8486FF7D2ED98876002D624E /* ZLNavTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF3B2ED98876002D624E /* ZLNavTabBarViewController.m */; };
+		8486FF7E2ED98876002D624E /* GMItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF522ED98876002D624E /* GMItemViewController.m */; };
+		8486FF7F2ED98876002D624E /* ZLScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486FF382ED98876002D624E /* ZLScrollViewViewController.m */; };
+		8486FF812ED988F1002D624E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8486FF802ED988F1002D624E /* Main.storyboard */; };
 		87018620E1FF3E045242C907 /* Pods_ZLPagerTabController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13DD922F926D615B0D5DAF9 /* Pods_ZLPagerTabController_Example.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C15030B73AE32B248F349C4B /* Pods_ZLPagerTabController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C5BE4342897DEA05FFA351 /* Pods_ZLPagerTabController_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +64,8 @@
 
 /* Begin PBXFileReference section */
 		21C8FC5FF67C8EE2C0AA82ED /* Pods-ZLPagerTabController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLPagerTabController_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZLPagerTabController_Example/Pods-ZLPagerTabController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		25B6058230E6BAC29BF12286 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3B8299CB3C1D584537B70824 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		25B6058230E6BAC29BF12286 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3B8299CB3C1D584537B70824 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5F50470473EA926C172C1D11 /* Pods-ZLPagerTabController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLPagerTabController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZLPagerTabController_Tests/Pods-ZLPagerTabController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZLPagerTabController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLPagerTabController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,10 +86,61 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61D4890415EC332465E7F4B9 /* ZLPagerTabController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZLPagerTabController.podspec; path = ../ZLPagerTabController.podspec; sourceTree = "<group>"; };
+		61D4890415EC332465E7F4B9 /* ZLPagerTabController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZLPagerTabController.podspec; path = ../ZLPagerTabController.podspec; sourceTree = "<group>"; };
 		6A6C15AF5FFE326582A48B16 /* Pods-ZLPagerTabController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLPagerTabController_Example.release.xcconfig"; path = "Target Support Files/Pods-ZLPagerTabController_Example/Pods-ZLPagerTabController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8486FF222ED98876002D624E /* ZLAttributedVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAttributedVC.h; sourceTree = "<group>"; };
+		8486FF232ED98876002D624E /* ZLAttributedVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLAttributedVC.m; sourceTree = "<group>"; };
+		8486FF242ED98876002D624E /* ZLBaseChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLBaseChildViewController.h; sourceTree = "<group>"; };
+		8486FF252ED98876002D624E /* ZLBaseChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLBaseChildViewController.m; sourceTree = "<group>"; };
+		8486FF262ED98876002D624E /* ZLChildImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLChildImageVC.h; sourceTree = "<group>"; };
+		8486FF272ED98876002D624E /* ZLChildImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLChildImageVC.m; sourceTree = "<group>"; };
+		8486FF282ED98876002D624E /* ZLChildTextVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLChildTextVC.h; sourceTree = "<group>"; };
+		8486FF292ED98876002D624E /* ZLChildTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLChildTextVC.m; sourceTree = "<group>"; };
+		8486FF2A2ED98876002D624E /* ZLChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLChildViewController.h; sourceTree = "<group>"; };
+		8486FF2B2ED98876002D624E /* ZLChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLChildViewController.m; sourceTree = "<group>"; };
+		8486FF2C2ED98876002D624E /* ZLCustomVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLCustomVC.h; sourceTree = "<group>"; };
+		8486FF2D2ED98876002D624E /* ZLCustomVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLCustomVC.m; sourceTree = "<group>"; };
+		8486FF2E2ED98876002D624E /* ZLNormalChildVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLNormalChildVC.h; sourceTree = "<group>"; };
+		8486FF2F2ED98876002D624E /* ZLNormalChildVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLNormalChildVC.m; sourceTree = "<group>"; };
+		8486FF312ED98876002D624E /* ZLNestPagerTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLNestPagerTabBarViewController.h; sourceTree = "<group>"; };
+		8486FF322ED98876002D624E /* ZLNestPagerTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLNestPagerTabBarViewController.m; sourceTree = "<group>"; };
+		8486FF342ED98876002D624E /* ZLCustomScrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLCustomScrollViewViewController.h; sourceTree = "<group>"; };
+		8486FF352ED98876002D624E /* ZLCustomScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLCustomScrollViewViewController.m; sourceTree = "<group>"; };
+		8486FF372ED98876002D624E /* ZLScrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLScrollViewViewController.h; sourceTree = "<group>"; };
+		8486FF382ED98876002D624E /* ZLScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLScrollViewViewController.m; sourceTree = "<group>"; };
+		8486FF3A2ED98876002D624E /* ZLNavTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLNavTabBarViewController.h; sourceTree = "<group>"; };
+		8486FF3B2ED98876002D624E /* ZLNavTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLNavTabBarViewController.m; sourceTree = "<group>"; };
+		8486FF3D2ED98876002D624E /* ZLNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLNormalViewController.h; sourceTree = "<group>"; };
+		8486FF3E2ED98876002D624E /* ZLNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLNormalViewController.m; sourceTree = "<group>"; };
+		8486FF402ED98876002D624E /* ZLAttributedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAttributedViewController.h; sourceTree = "<group>"; };
+		8486FF412ED98876002D624E /* ZLAttributedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLAttributedViewController.m; sourceTree = "<group>"; };
+		8486FF432ED98876002D624E /* ZLEllipseMaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLEllipseMaskViewController.h; sourceTree = "<group>"; };
+		8486FF442ED98876002D624E /* ZLEllipseMaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLEllipseMaskViewController.m; sourceTree = "<group>"; };
+		8486FF462ED98876002D624E /* ZLImageTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLImageTextViewController.h; sourceTree = "<group>"; };
+		8486FF472ED98876002D624E /* ZLImageTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLImageTextViewController.m; sourceTree = "<group>"; };
+		8486FF492ED98876002D624E /* ZLSepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLSepViewController.h; sourceTree = "<group>"; };
+		8486FF4A2ED98876002D624E /* ZLSepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLSepViewController.m; sourceTree = "<group>"; };
+		8486FF4C2ED98876002D624E /* ZLNestPagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLNestPagerViewController.h; sourceTree = "<group>"; };
+		8486FF4D2ED98876002D624E /* ZLNestPagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLNestPagerViewController.m; sourceTree = "<group>"; };
+		8486FF4E2ED98876002D624E /* ZLParallaxPagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLParallaxPagerViewController.h; sourceTree = "<group>"; };
+		8486FF4F2ED98876002D624E /* ZLParallaxPagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLParallaxPagerViewController.m; sourceTree = "<group>"; };
+		8486FF512ED98876002D624E /* GMItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMItemViewController.h; sourceTree = "<group>"; };
+		8486FF522ED98876002D624E /* GMItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMItemViewController.m; sourceTree = "<group>"; };
+		8486FF542ED98876002D624E /* ZLCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLCustomViewController.h; sourceTree = "<group>"; };
+		8486FF552ED98876002D624E /* ZLCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLCustomViewController.m; sourceTree = "<group>"; };
+		8486FF562ED98876002D624E /* TestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		8486FF572ED98876002D624E /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		8486FF582ED98876002D624E /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		8486FF5A2ED98876002D624E /* ZLSeparatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLSeparatorViewController.h; sourceTree = "<group>"; };
+		8486FF5B2ED98876002D624E /* ZLSeparatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLSeparatorViewController.m; sourceTree = "<group>"; };
+		8486FF5D2ED98876002D624E /* ZLSegmentedControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLSegmentedControlViewController.h; sourceTree = "<group>"; };
+		8486FF5E2ED98876002D624E /* ZLSegmentedControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLSegmentedControlViewController.m; sourceTree = "<group>"; };
+		8486FF602ED98876002D624E /* ZLTabBarAddViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLTabBarAddViewViewController.h; sourceTree = "<group>"; };
+		8486FF612ED98876002D624E /* ZLTabBarAddViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLTabBarAddViewViewController.m; sourceTree = "<group>"; };
+		8486FF632ED98876002D624E /* ZLBasePagerTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLBasePagerTabbarViewController.h; sourceTree = "<group>"; };
+		8486FF642ED98876002D624E /* ZLBasePagerTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLBasePagerTabbarViewController.m; sourceTree = "<group>"; };
+		8486FF802ED988F1002D624E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A13DD922F926D615B0D5DAF9 /* Pods_ZLPagerTabController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZLPagerTabController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C5BE4342897DEA05FFA351 /* Pods_ZLPagerTabController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZLPagerTabController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39FD6CA523C252A3915D682 /* Pods-ZLPagerTabController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLPagerTabController_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZLPagerTabController_Tests/Pods-ZLPagerTabController_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +180,6 @@
 				5F50470473EA926C172C1D11 /* Pods-ZLPagerTabController_Tests.debug.xcconfig */,
 				E39FD6CA523C252A3915D682 /* Pods-ZLPagerTabController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,9 +222,11 @@
 			children = (
 				6003F59C195388D20070C39A /* ZLAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZLAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				8486FF302ED98876002D624E /* childViewControllers */,
+				8486FF652ED98876002D624E /* pagerTabbarViewcontrollers */,
 				6003F5A5195388D20070C39A /* ZLViewController.h */,
 				6003F5A6195388D20070C39A /* ZLViewController.m */,
+				8486FF802ED988F1002D624E /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -195,6 +273,191 @@
 				25B6058230E6BAC29BF12286 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8486FF302ED98876002D624E /* childViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF222ED98876002D624E /* ZLAttributedVC.h */,
+				8486FF232ED98876002D624E /* ZLAttributedVC.m */,
+				8486FF242ED98876002D624E /* ZLBaseChildViewController.h */,
+				8486FF252ED98876002D624E /* ZLBaseChildViewController.m */,
+				8486FF262ED98876002D624E /* ZLChildImageVC.h */,
+				8486FF272ED98876002D624E /* ZLChildImageVC.m */,
+				8486FF282ED98876002D624E /* ZLChildTextVC.h */,
+				8486FF292ED98876002D624E /* ZLChildTextVC.m */,
+				8486FF2A2ED98876002D624E /* ZLChildViewController.h */,
+				8486FF2B2ED98876002D624E /* ZLChildViewController.m */,
+				8486FF2C2ED98876002D624E /* ZLCustomVC.h */,
+				8486FF2D2ED98876002D624E /* ZLCustomVC.m */,
+				8486FF2E2ED98876002D624E /* ZLNormalChildVC.h */,
+				8486FF2F2ED98876002D624E /* ZLNormalChildVC.m */,
+			);
+			path = childViewControllers;
+			sourceTree = "<group>";
+		};
+		8486FF332ED98876002D624E /* 标签页面嵌套使用 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF312ED98876002D624E /* ZLNestPagerTabBarViewController.h */,
+				8486FF322ED98876002D624E /* ZLNestPagerTabBarViewController.m */,
+			);
+			path = "标签页面嵌套使用";
+			sourceTree = "<group>";
+		};
+		8486FF362ED98876002D624E /* 弹性GMScrollView效果 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF342ED98876002D624E /* ZLCustomScrollViewViewController.h */,
+				8486FF352ED98876002D624E /* ZLCustomScrollViewViewController.m */,
+			);
+			path = "弹性GMScrollView效果";
+			sourceTree = "<group>";
+		};
+		8486FF392ED98876002D624E /* 弹性ScrollView效果 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF372ED98876002D624E /* ZLScrollViewViewController.h */,
+				8486FF382ED98876002D624E /* ZLScrollViewViewController.m */,
+			);
+			path = "弹性ScrollView效果";
+			sourceTree = "<group>";
+		};
+		8486FF3C2ED98876002D624E /* 导航栏上添加TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF3A2ED98876002D624E /* ZLNavTabBarViewController.h */,
+				8486FF3B2ED98876002D624E /* ZLNavTabBarViewController.m */,
+			);
+			path = "导航栏上添加TabBar";
+			sourceTree = "<group>";
+		};
+		8486FF3F2ED98876002D624E /* 对齐切换 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF3D2ED98876002D624E /* ZLNormalViewController.h */,
+				8486FF3E2ED98876002D624E /* ZLNormalViewController.m */,
+			);
+			path = "对齐切换";
+			sourceTree = "<group>";
+		};
+		8486FF422ED98876002D624E /* 富文本展示 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF402ED98876002D624E /* ZLAttributedViewController.h */,
+				8486FF412ED98876002D624E /* ZLAttributedViewController.m */,
+			);
+			path = "富文本展示";
+			sourceTree = "<group>";
+		};
+		8486FF452ED98876002D624E /* 椭圆遮罩层设置 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF432ED98876002D624E /* ZLEllipseMaskViewController.h */,
+				8486FF442ED98876002D624E /* ZLEllipseMaskViewController.m */,
+			);
+			path = "椭圆遮罩层设置";
+			sourceTree = "<group>";
+		};
+		8486FF482ED98876002D624E /* 文字图片混合展示 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF462ED98876002D624E /* ZLImageTextViewController.h */,
+				8486FF472ED98876002D624E /* ZLImageTextViewController.m */,
+			);
+			path = "文字图片混合展示";
+			sourceTree = "<group>";
+		};
+		8486FF4B2ED98876002D624E /* 下划线设置 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF492ED98876002D624E /* ZLSepViewController.h */,
+				8486FF4A2ED98876002D624E /* ZLSepViewController.m */,
+			);
+			path = "下划线设置";
+			sourceTree = "<group>";
+		};
+		8486FF502ED98876002D624E /* 悬浮PagerTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF4C2ED98876002D624E /* ZLNestPagerViewController.h */,
+				8486FF4D2ED98876002D624E /* ZLNestPagerViewController.m */,
+				8486FF4E2ED98876002D624E /* ZLParallaxPagerViewController.h */,
+				8486FF4F2ED98876002D624E /* ZLParallaxPagerViewController.m */,
+			);
+			path = "悬浮PagerTabbar";
+			sourceTree = "<group>";
+		};
+		8486FF532ED98876002D624E /* 字体颜色宽度设置 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF512ED98876002D624E /* GMItemViewController.h */,
+				8486FF522ED98876002D624E /* GMItemViewController.m */,
+			);
+			path = "字体颜色宽度设置";
+			sourceTree = "<group>";
+		};
+		8486FF592ED98876002D624E /* 自定义cell展示 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF542ED98876002D624E /* ZLCustomViewController.h */,
+				8486FF552ED98876002D624E /* ZLCustomViewController.m */,
+				8486FF562ED98876002D624E /* TestCell.h */,
+				8486FF572ED98876002D624E /* TestCell.m */,
+				8486FF582ED98876002D624E /* TestCell.xib */,
+			);
+			path = "自定义cell展示";
+			sourceTree = "<group>";
+		};
+		8486FF5C2ED98876002D624E /* cell之间设置分界线 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF5A2ED98876002D624E /* ZLSeparatorViewController.h */,
+				8486FF5B2ED98876002D624E /* ZLSeparatorViewController.m */,
+			);
+			path = "cell之间设置分界线";
+			sourceTree = "<group>";
+		};
+		8486FF5F2ED98876002D624E /* SegmentedControl效果 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF5D2ED98876002D624E /* ZLSegmentedControlViewController.h */,
+				8486FF5E2ED98876002D624E /* ZLSegmentedControlViewController.m */,
+			);
+			path = "SegmentedControl效果";
+			sourceTree = "<group>";
+		};
+		8486FF622ED98876002D624E /* tabBar上添加其他按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF602ED98876002D624E /* ZLTabBarAddViewViewController.h */,
+				8486FF612ED98876002D624E /* ZLTabBarAddViewViewController.m */,
+			);
+			path = "tabBar上添加其他按钮";
+			sourceTree = "<group>";
+		};
+		8486FF652ED98876002D624E /* pagerTabbarViewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				8486FF332ED98876002D624E /* 标签页面嵌套使用 */,
+				8486FF362ED98876002D624E /* 弹性GMScrollView效果 */,
+				8486FF392ED98876002D624E /* 弹性ScrollView效果 */,
+				8486FF3C2ED98876002D624E /* 导航栏上添加TabBar */,
+				8486FF3F2ED98876002D624E /* 对齐切换 */,
+				8486FF422ED98876002D624E /* 富文本展示 */,
+				8486FF452ED98876002D624E /* 椭圆遮罩层设置 */,
+				8486FF482ED98876002D624E /* 文字图片混合展示 */,
+				8486FF4B2ED98876002D624E /* 下划线设置 */,
+				8486FF502ED98876002D624E /* 悬浮PagerTabbar */,
+				8486FF532ED98876002D624E /* 字体颜色宽度设置 */,
+				8486FF592ED98876002D624E /* 自定义cell展示 */,
+				8486FF5C2ED98876002D624E /* cell之间设置分界线 */,
+				8486FF5F2ED98876002D624E /* SegmentedControl效果 */,
+				8486FF622ED98876002D624E /* tabBar上添加其他按钮 */,
+				8486FF632ED98876002D624E /* ZLBasePagerTabbarViewController.h */,
+				8486FF642ED98876002D624E /* ZLBasePagerTabbarViewController.m */,
+			);
+			path = pagerTabbarViewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +512,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = fanpeng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 6ZA44MJL83;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +526,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -278,9 +546,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				8486FF812ED988F1002D624E /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				8486FF662ED98876002D624E /* TestCell.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,11 +634,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZLPagerTabController_Example/Pods-ZLPagerTabController_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ZLPagerTabController/ZLPagerTabController.framework",
+				"${BUILT_PRODUCTS_DIR}/ZLPopView/ZLPopView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLPagerTabController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLPopView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -384,6 +659,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ZLAppDelegate.m in Sources */,
+				8486FF672ED98876002D624E /* ZLImageTextViewController.m in Sources */,
+				8486FF682ED98876002D624E /* ZLSegmentedControlViewController.m in Sources */,
+				8486FF692ED98876002D624E /* ZLChildTextVC.m in Sources */,
+				8486FF6A2ED98876002D624E /* ZLSeparatorViewController.m in Sources */,
+				8486FF6B2ED98876002D624E /* ZLEllipseMaskViewController.m in Sources */,
+				8486FF6C2ED98876002D624E /* ZLCustomVC.m in Sources */,
+				8486FF6D2ED98876002D624E /* ZLNormalViewController.m in Sources */,
+				8486FF6E2ED98876002D624E /* ZLNestPagerViewController.m in Sources */,
+				8486FF6F2ED98876002D624E /* ZLSepViewController.m in Sources */,
+				8486FF702ED98876002D624E /* ZLBasePagerTabbarViewController.m in Sources */,
+				8486FF712ED98876002D624E /* ZLParallaxPagerViewController.m in Sources */,
+				8486FF722ED98876002D624E /* TestCell.m in Sources */,
+				8486FF732ED98876002D624E /* ZLBaseChildViewController.m in Sources */,
+				8486FF742ED98876002D624E /* ZLCustomScrollViewViewController.m in Sources */,
+				8486FF752ED98876002D624E /* ZLChildImageVC.m in Sources */,
+				8486FF762ED98876002D624E /* ZLCustomViewController.m in Sources */,
+				8486FF772ED98876002D624E /* ZLNestPagerTabBarViewController.m in Sources */,
+				8486FF782ED98876002D624E /* ZLNormalChildVC.m in Sources */,
+				8486FF792ED98876002D624E /* ZLAttributedViewController.m in Sources */,
+				8486FF7A2ED98876002D624E /* ZLAttributedVC.m in Sources */,
+				8486FF7B2ED98876002D624E /* ZLTabBarAddViewViewController.m in Sources */,
+				8486FF7C2ED98876002D624E /* ZLChildViewController.m in Sources */,
+				8486FF7D2ED98876002D624E /* ZLNavTabBarViewController.m in Sources */,
+				8486FF7E2ED98876002D624E /* GMItemViewController.m in Sources */,
+				8486FF7F2ED98876002D624E /* ZLScrollViewViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* ZLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -513,12 +813,17 @@
 			baseConfigurationReference = 21C8FC5FF67C8EE2C0AA82ED /* Pods-ZLPagerTabController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6ZA44MJL83;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZLPagerTabController/ZLPagerTabController-Prefix.pch";
 				INFOPLIST_FILE = "ZLPagerTabController/ZLPagerTabController-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wws.pagetab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "glcoalme-dev-all";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -529,12 +834,17 @@
 			baseConfigurationReference = 6A6C15AF5FFE326582A48B16 /* Pods-ZLPagerTabController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6ZA44MJL83;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZLPagerTabController/ZLPagerTabController-Prefix.pch";
 				INFOPLIST_FILE = "ZLPagerTabController/ZLPagerTabController-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wws.pagetab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "glcoalme-dev-all";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

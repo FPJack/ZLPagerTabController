@@ -4,7 +4,10 @@ platform :ios, '10.0'
 
 target 'ZLPagerTabController_Example' do
   pod 'ZLPagerTabController', :path => '../'
-
+  # pod 'ZLPopView', :path => '../../ZLPopView'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'ZLPopView'
   target 'ZLPagerTabController_Tests' do
     inherit! :search_paths
 

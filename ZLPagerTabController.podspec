@@ -21,22 +21,26 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/fanpeng/ZLPagerTabController'
+  s.homepage         = 'https://github.com/FPJack/ZLPagerTabController.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'fanpeng' => 'peng.fan@ukelink.com' }
-  s.source           = { :git => 'https://github.com/fanpeng/ZLPagerTabController.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/FPJack/ZLPagerTabController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZLPagerTabController/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ZLPagerTabController' => ['ZLPagerTabController/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'PagerViewController' do |core|
+    core.source_files = 'ZLPagerTabController/Classes/PagerViewController/**/*.{h,m,swift}'
+  end
+  s.subspec 'ParallaxHeader' do |core|
+    core.source_files = 'ZLPagerTabController/Classes/ParallaxHeader/**/*.{h,m,swift}'
+  end
+  s.subspec 'ParallaxPagerViewController' do |core|
+    core.dependency 'ZLPagerTabController/PagerViewController'
+    core.dependency 'ZLPagerTabController/ParallaxHeader'
+    core.source_files = 'ZLPagerTabController/Classes/ParallaxPagerViewController/**/*.{h,m,swift}'
+  end
 end
