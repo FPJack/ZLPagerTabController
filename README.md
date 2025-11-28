@@ -35,6 +35,24 @@ it, simply add the following line to your Podfile:
 pod 'ZLPagerTabController'
 ```
 
+## 新建控制器继承ZLPagerTabBarViewController，实现数据源方法
+```ruby
+//返回子控制器
+- (NSArray<UIViewController *> *)childViewControllersForPagerViewController:(ZLPagerViewController *)pagerViewController {
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    UIViewController *vc3 = [[UIViewController alloc] init];
+    return @[vc1, vc2, vc3];
+}
+//返回标签数据
+- (ZLTabBarCellItem *)pagerViewController:(ZLPagerTabBarViewController *)pagerViewController forIndex:(NSInteger)index {
+    ZLTabBarCellItem *item = [[ZLTabBarCellItem alloc] init];
+    item.title = @"标签1";
+    item.selectedTitleColor = UIColor.orangeColor;
+    return item;
+}
+```
+
 
 <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4799.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4798.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4797.GIF" width="30%" height="30%">
 
