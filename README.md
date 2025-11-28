@@ -21,9 +21,14 @@ pod 'ZLPagerTabController'
 
 <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4796.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4795.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4794.GIF" width="30%" height="30%">
 
-<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4793.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4792.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4791.GIF" width="30%" height="30%">
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4793.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4792.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4800.GIF" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4801.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4802.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4803.GIF" width="30%" height="30%">
+
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4804.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4805.GIF" width="30%" height="30%">   <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4806.GIF" width="30%" height="30%">
 
 
+<img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4807.GIF" width="30%" height="30%">   
 
 
 ## Author
