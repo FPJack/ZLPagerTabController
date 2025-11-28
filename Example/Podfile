@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ZLPagerTabController_Example' do
+  pod 'ZLPagerTabController', :path => '../'
+
+  target 'ZLPagerTabController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
