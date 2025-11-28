@@ -51,7 +51,7 @@ pod 'ZLPagerTabController'
 
 <img src="https://github.com/FPJack/ZLPagerTabController/blob/master/IMG_4807.PNG" width="30%" height="30%">   
 
-## 新建控制器继承ZLPagerTabBarViewController，实现数据源方法
+## 新建控制器继承ZLPagerTabBarViewController，实现数据源方法，更多自定义查看相对应的demo
 ```ruby
 //返回子控制器
 - (NSArray<UIViewController *> *)childViewControllersForPagerViewController:(ZLPagerViewController *)pagerViewController {
