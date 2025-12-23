@@ -105,6 +105,7 @@
         if (!CGRectEqualToRect(self.tabBarView.frame, frame)) {
             self.tabBarView.frame = frame;
             [self.tabBarView reloadTabBarView];
+            [self.tabBarView pagerTabBarUpdateIndicatorFromIndex:self.currentIndex toIndex:self.currentIndex animated:YES];
         }
     }
 }
