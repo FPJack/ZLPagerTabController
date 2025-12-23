@@ -98,4 +98,14 @@
 - (void)pagerViewController:(ZLPagerViewController *)pagerViewController updateFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex progressPercentage:(CGFloat)progressPercentage indexWasChanged:(BOOL)indexWasChanged {
     [self.tabBarView pagerTabUpdateIndicatorFromIndex:fromIndex toIndex:toIndex withProgressPercentage:progressPercentage indexWasChanged:indexWasChanged animated:fromIndex != toIndex];
 }
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    if ([self.delegate respondsToSelector:@selector(tabBarViewFrameForPagerViewController:)]) {
+        CGRect frame = [self.delegate tabBarViewFrameForPagerViewController:self];
+        if (!CGRectEqualToRect(self.tabBarView.frame, frame)) {
+            self.tabBarView.frame = frame;
+            [self.tabBarView reloadTabBarView];
+        }
+    }
+}
 @end
