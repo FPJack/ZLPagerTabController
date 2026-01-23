@@ -5,8 +5,9 @@
 //  Created by admin on 2025/8/1.
 //
 
-#import <ZLPagerTabController/ZLPagerTabBarViewController.h>
-#import <ZLPagerTabController/ZLScrollView.h>
+
+#import "ZLScrollView.h"
+#import "ZLPagerTabBarViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
