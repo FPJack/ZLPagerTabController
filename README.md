@@ -30,8 +30,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 
 ```ruby
-//同时支持SPM导入和CocoaPods导入
-pod 'ZLPagerTabController'
+
+    支持SPM导入和CocoaPods导入
+
+    pod 'ZLPagerTabController'
 ```
 
 
