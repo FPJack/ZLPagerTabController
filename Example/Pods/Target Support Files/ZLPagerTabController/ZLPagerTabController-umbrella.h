@@ -18,14 +18,6 @@
 #import "ZLScrollView.h"
 #import "ZLScrollViewController.h"
 #import "ZLParallaxPageTabBarViewController.h"
-#import "ZLPagerTabBar.h"
-#import "ZLPagerTabBarViewController.h"
-#import "ZLPagerViewController.h"
-#import "ZLTabBarCellItem.h"
-#import "ZLParallaxHeader.h"
-#import "ZLScrollView.h"
-#import "ZLScrollViewController.h"
-#import "ZLParallaxPageTabBarViewController.h"
 
 FOUNDATION_EXPORT double ZLPagerTabControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZLPagerTabControllerVersionString[];

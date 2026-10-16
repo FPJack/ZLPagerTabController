@@ -6,15 +6,10 @@ PODS:
     - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
   - MJRefresh (3.7.6)
-  - ZLPagerTabController (0.1.1):
-    - ZLPagerTabController/PagerViewController (= 0.1.1)
-    - ZLPagerTabController/ParallaxHeader (= 0.1.1)
-    - ZLPagerTabController/ParallaxPagerViewController (= 0.1.1)
-  - ZLPagerTabController/PagerViewController (0.1.1)
-  - ZLPagerTabController/ParallaxHeader (0.1.1)
-  - ZLPagerTabController/ParallaxPagerViewController (0.1.1):
-    - ZLPagerTabController/PagerViewController
-    - ZLPagerTabController/ParallaxHeader
+  - ZLPagerTabController (0.1.2):
+    - ZLPagerTabController/PagerViewController (= 0.1.2)
+    - ZLPagerTabController/ParallaxHeader (= 0.1.2)
+    - ZLPagerTabController/ParallaxPagerViewController (= 0.1.2)
   - ZLPopView (0.1.1)
 
 DEPENDENCIES:
@@ -39,9 +34,9 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
-  ZLPagerTabController: 7b087b2dff175d51ce1d132dda2838b8202b5526
+  ZLPagerTabController: ff7fb095f73685eec6510b2e56df291655750c5e
   ZLPopView: bb64a7bceace637f3909edccacc5831edec3a960
 
-PODFILE CHECKSUM: 591ce2a19f0cb3ef069e23d39237097148b0eb27
+PODFILE CHECKSUM: abc7a911bb67c37cbeafcdfd858ec726c09526dd
 
 COCOAPODS: 1.16.2

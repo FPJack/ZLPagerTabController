@@ -25,7 +25,7 @@
         if ([self.delegate respondsToSelector:@selector(tabBarViewFrameForPagerViewController:)]) {
             _tabBarView = [[ZLPagerTabBar alloc] initWithFrame:[self.delegate tabBarViewFrameForPagerViewController:self]];
         }else {
-            _tabBarView = [[ZLPagerTabBar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
+            _tabBarView = [[ZLPagerTabBar alloc] initWithFrame:[self defaultTabBarViewFrame]];
         }
         _tabBarView.dataSource = self;
         _tabBarView.delegate = self;
@@ -70,7 +70,12 @@
 - (void)pagerViewController:(ZLPagerViewController *)pagerViewController didSelectItem:(ZLTabBarCellItem *)item index:(NSInteger)index {
 }
 - (CGRect)tabBarViewFrameForPagerViewController:(ZLPagerViewController *)pagerViewController {
-    return CGRectMake(0, 0, self.view.bounds.size.width, 44);
+    return [self defaultTabBarViewFrame];
+}
+/// 默认位置：紧贴安全区顶部（即导航栏下方），避免被导航栏/刘海遮挡
+- (CGRect)defaultTabBarViewFrame {
+    CGFloat top = self.view.safeAreaInsets.top;
+    return CGRectMake(0, top, self.view.bounds.size.width, 44);
 }
 #pragma mark - ZLPagerTabBarDelegate
 - (void)pagerTabBar:(ZLPagerTabBar *)pagerTabBar didSelectItem:(ZLTabBarCellItem *)item index:(NSInteger)index {
@@ -100,13 +105,21 @@
 }
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    if ([self.delegate respondsToSelector:@selector(tabBarViewFrameForPagerViewController:)]) {
-        CGRect frame = [self.delegate tabBarViewFrameForPagerViewController:self];
-        if (!CGRectEqualToRect(self.tabBarView.frame, frame)) {
-            self.tabBarView.frame = frame;
-            [self.tabBarView reloadTabBarView];
-            [self.tabBarView pagerTabBarUpdateIndicatorFromIndex:self.currentIndex toIndex:self.currentIndex animated:YES];
-        }
-    }
+    [self updateTabBarViewFrameIfNeed];
+}
+- (void)viewSafeAreaInsetsDidChange {
+    [super viewSafeAreaInsetsDidChange];
+    //iOS26 之后导航栏默认是通透的，内容会延伸到导航栏下面，安全区变化时需要重新布局
+    [self updateTabBarViewFrameIfNeed];
+}
+- (void)updateTabBarViewFrameIfNeed {
+    if (!self.tabBarView.superview) return;
+    if (![self.delegate respondsToSelector:@selector(tabBarViewFrameForPagerViewController:)]) return;
+    CGRect frame = [self.delegate tabBarViewFrameForPagerViewController:self];
+    if (CGRectEqualToRect(self.tabBarView.frame, frame)) return;
+    self.tabBarView.frame = frame;
+    [self updateContainerScrollViewFrame];
+    [self.tabBarView reloadTabBarView];
+    [self.tabBarView pagerTabBarUpdateIndicatorFromIndex:self.currentIndex toIndex:self.currentIndex animated:YES];
 }
 @end

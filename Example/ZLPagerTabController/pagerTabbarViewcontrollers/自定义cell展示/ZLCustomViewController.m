@@ -21,7 +21,7 @@
     self.navigationItem.rightBarButtonItem = nil;
 }
 -(CGRect)tabBarViewFrameForPagerViewController:(ZLPagerViewController *)pagerViewController {
-    return CGRectMake(0, 0, self.view.bounds.size.width, 80);
+    return CGRectMake(0, self.view.safeAreaInsets.top, self.view.bounds.size.width, 80);
 }
 - (ZLTabBarCellItem *)pagerViewController:(ZLPagerTabBarViewController *)pagerViewController forIndex:(NSInteger)index {
     ZLTabBarCellItem *item = [[ZLTabBarCellItem alloc] init];

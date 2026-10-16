@@ -23,7 +23,8 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 -(CGRect)tabBarViewFrameForPagerViewController:(ZLPagerViewController *)pagerViewController {
-    return CGRectMake(0, 0, self.view.bounds.size.width, 50);
+    //iOS26 之后导航栏是通透的，内容会铺到导航栏下面，这里用安全区顶部来定位，避免被导航栏遮挡
+    return CGRectMake(0, self.view.safeAreaInsets.top, self.view.bounds.size.width, 50);
 }
 - (NSArray<UIViewController *> *)childViewControllersForPagerViewController:(ZLPagerViewController *)pagerViewController {
     NSMutableArray *viewControllers = [NSMutableArray array];
