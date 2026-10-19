@@ -138,6 +138,10 @@
 @property (nonatomic) BOOL shouldUpdateButtonBarView;
 @property (nonatomic,assign)CGFloat minInterItemSpacing;
 @property (nonatomic,assign) ZLTabBarViewAlignment innerAlignment;
+/// 记录上一次的 bounds，用于识别折叠屏展开/折叠、旋转、分屏等尺寸变化
+@property (nonatomic,assign)CGSize lastBoundsSize;
+/// 防止 adjustTabBarViewLayout 内部主动调用 layoutSubviews 造成递归
+@property (nonatomic,assign)BOOL isAdjustingLayout;
 
 
 @end
@@ -261,8 +265,10 @@
     [self adjustTabBarViewLayout];
 }
 - (void)adjustTabBarViewLayout {
+    self.isAdjustingLayout = YES;
     [self layoutIfNeeded];
     [self layoutSubviews];
+    self.isAdjustingLayout = NO;
     ZLTabBarViewAlignment alignment = self.innerAlignment;
     if (alignment == ZLTabBarViewAlignmentSpaceAround
         || alignment == ZLTabBarViewAlignmentSpaceEvenly
@@ -326,6 +332,27 @@
     }
 }
 
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    //adjustTabBarViewLayout 内部会主动触发布局，这里直接返回避免递归
+    if (self.isAdjustingLayout) return;
+    if (CGSizeEqualToSize(self.lastBoundsSize, self.bounds.size)) return;
+    BOOL isFirstLayout = CGSizeEqualToSize(self.lastBoundsSize, CGSizeZero);
+    self.lastBoundsSize = self.bounds.size;
+    if (isFirstLayout || self.items.count == 0) return;
+    //折叠屏展开/折叠、旋转、iPad 分屏等宽高变化后，
+    //居中/均分等对齐方式以及指示器的位置都依赖 bounds，必须重新计算
+    [self reloadTabBarViewForBoundsChange];
+}
+
+- (void)reloadTabBarViewForBoundsChange {
+    [self adjustTabBarViewLayout];
+    [self updateIndicatorFromIndex:self.currentIndex toIndex:self.currentIndex withProgressPercentage:1.0];
+    if (self.currentIndex >= 0 && self.currentIndex < self.items.count) {
+        [self moveToIndex:self.currentIndex animated:NO];
+    }
+}
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];

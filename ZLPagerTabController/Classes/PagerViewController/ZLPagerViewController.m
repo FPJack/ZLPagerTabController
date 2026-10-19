@@ -45,6 +45,8 @@
 
 @property (nonatomic,strong)NSArray<UIViewController *> *tempPagerChildViewControllers;
 @property (nonatomic,strong,readwrite)NSArray<UIViewController *> *pagerChildViewControllers;
+/// 是否正在进行尺寸切换（折叠屏展开/折叠、旋转、iPad 分屏），期间不允许根据 contentOffset 反推 currentIndex
+@property (nonatomic,assign)BOOL isSizeTransitioning;
 
 @end
 
@@ -105,9 +107,26 @@
     [super viewDidLayoutSubviews];
     CGAffineTransform transform = self.semanticContentAttribute == UISemanticContentAttributeForceRightToLeft ? CGAffineTransformMakeScale(-1, 1) : CGAffineTransformIdentity;
     if (!CGAffineTransformEqualToTransform(transform, self.containerScrollView.transform)) {
-        self.containerScrollView.transform = CGAffineTransformMakeScale(-1, 1);
+        self.containerScrollView.transform = transform;
     }
     [self updateChildViewsIfNeed];
+}
+/// 折叠屏（如 iPhone Duo）展开/折叠、旋转、iPad 分屏时 view 的宽度会变化，
+/// 过程中 contentOffset 会被系统打乱，导致页面跳页/错位，这里做保护
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    NSInteger index = self.currentIndex;
+    self.isSizeTransitioning = YES;
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        [self.containerScrollView setContentOffset:CGPointMake([self pageOffsetForChildIndex:index], 0) animated:NO];
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        self.isSizeTransitioning = NO;
+        self.currentIndex = index;
+        self.lastSize = CGSizeZero;
+        [self.containerScrollView setContentOffset:CGPointMake([self pageOffsetForChildIndex:index], 0) animated:NO];
+        self.lastContentOffset = self.containerScrollView.contentOffset.x;
+        [self updateChildViews];
+    }];
 }
 -(void)moveToViewControllerAtIndex:(NSInteger)index{
     [self moveToViewControllerAtIndex:index animated:YES];
@@ -219,7 +238,7 @@
                 childVC.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
                 CGAffineTransform transform = self.semanticContentAttribute == UISemanticContentAttributeForceRightToLeft ? CGAffineTransformMakeScale(-1, 1) : CGAffineTransformIdentity;
                 if (!CGAffineTransformEqualToTransform(transform, childVC.view.transform)) {
-                    childVC.view.transform = CGAffineTransformMakeScale(-1, 1);
+                    childVC.view.transform = transform;
                 }
                 [childVC didMoveToParentViewController:self];
                 [childVC beginAppearanceTransition:YES animated:NO];
@@ -236,6 +255,8 @@
         }
     }];
     
+    //尺寸切换过程中 contentOffset 不可信，直接沿用切换前的 currentIndex
+    if (self.isSizeTransitioning) return;
     NSInteger oldCurrentIndex = self.currentIndex;
     NSInteger newCurrentIndex = (self.containerScrollView.contentOffset.x + 1.5 * self.pageWidth) / self.pageWidth - 1;
     NSInteger childsCount = childViewControllers.count;
